@@ -5,6 +5,9 @@
     <asset path="QtLibs/armle-v7/libQtCore.so.4.8.3" xdt:Transform="Remove" xdt:Locator="Match(path)" />
     <asset path="QtLibs/armle-v7/libQtGui.so.4.8.3" xdt:Transform="Remove" xdt:Locator="Match(path)" />
     <asset path="QtLibs/armle-v7/libQtOpenGL.so.4.8.3" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/libQtCore.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/libQtGui.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/libQtOpenGL.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
     <asset path="QtLibs/armle-v7/platforms/libblackberry.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
   </configuration>
  
@@ -12,6 +15,9 @@
     <asset path="QtLibs/armle-v7/libQtCore.so.4.8.3" xdt:Transform="Remove" xdt:Locator="Match(path)" />
     <asset path="QtLibs/armle-v7/libQtGui.so.4.8.3" xdt:Transform="Remove" xdt:Locator="Match(path)" />
     <asset path="QtLibs/armle-v7/libQtOpenGL.so.4.8.3" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/libQtCore.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/libQtGui.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/libQtOpenGL.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
     <asset path="QtLibs/armle-v7/platforms/libblackberry.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
   </configuration>
 
@@ -19,10 +25,12 @@
     <asset path="QtLibs/x86/libQtCore.so.4.8.3" xdt:Transform="Remove" xdt:Locator="Match(path)" />
     <asset path="QtLibs/x86/libQtGui.so.4.8.3" xdt:Transform="Remove" xdt:Locator="Match(path)" />
     <asset path="QtLibs/x86/libQtOpenGL.so.4.8.3" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/x86/libQtCore.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/x86/libQtGui.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/x86/libQtOpenGL.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
     <asset path="QtLibs/x86/platforms/libblackberry.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
   </configuration>
 
-  <env var="LD_LIBRARY_PATH" value="app/native/lib" xdt:Transform="Remove" xdt:Locator="Match(var)" />
   <env var="QML_IMPORT_PATH" value="app/native/imports" xdt:Transform="Remove" xdt:Locator="Match(var)" />
   <env var="QT_PLUGIN_PATH" value="app/native/plugins" xdt:Transform="Remove" xdt:Locator="Match(var)" />
   <env var="QT_QPA_FONTDIR" value="/usr/fonts/font_repository/monotype" xdt:Transform="Remove" xdt:Locator="Match(var)" />

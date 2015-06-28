@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="BlackBerry Included Paths" Condition="'$(Platform)' == 'BlackBerry'">
+    <ExcludePath>$(QNX_TARGET)\usr\include\qt4;$(QNX_TARGET)\usr\include\qt4\QtDeclarative;$(QNX_TARGET)\usr\include\qt4\QtCore</ExcludePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Platform)' == 'BlackBerry'">
     <ClCompile>
-      <PreprocessorDefinitions>HAS_QT;QT_BOOTSTRAPPED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HAS_QT_CORE;QT_BOOTSTRAPPED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>EGL;QtCore;QtGui;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>QtCore;QtGui;QtOpenGL;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(ProjectDir)QtLibs\$(CPUVARDIR);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
