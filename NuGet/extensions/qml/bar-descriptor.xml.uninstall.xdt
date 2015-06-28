@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<qnx xmlns="http://www.qnx.com/schemas/application/1.0" xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+
+  <configuration name="Device-Debug" xdt:Locator="Match(name)">
+    <asset path="QtLibs/armle-v7/libQtDeclarative.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/libQtNetwork.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/libQtMultimedia.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/libQtScript.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/libQtSql.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/libQtSvg.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/libQtXmlPatterns.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+  </configuration>
+
+   <configuration name="Device-Release" xdt:Locator="Match(name)">
+    <asset path="QtLibs/armle-v7/libQtDeclarative.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/libQtNetwork.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/libQtMultimedia.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/libQtScript.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/libQtSql.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/libQtSvg.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/libQtXmlPatterns.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+  </configuration>
+
+  <configuration name="Simulator-Debug" xdt:Locator="Match(name)">
+    <asset path="QtLibs/x86/libQtDeclarative.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/x86/libQtNetwork.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/x86/libQtMultimedia.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/x86/libQtScript.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/x86/libQtSql.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/x86/libQtSvg.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/x86/libQtXmlPatterns.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+  </configuration>
+
+</qnx>

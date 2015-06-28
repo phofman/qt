@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>codetitans-playbook-qt4-qml</id>
+    <title>Qt 4.8.3 QML support for PlayBook</title>
+    <version>1.0.1</version>
+    <authors>Paweł Hofman</authors>
+    <owners>Paweł Hofman</owners>
+    <licenseUrl>https://github.com/phofman/vs-plugin</licenseUrl>
+    <projectUrl>https://github.com/phofman/vs-plugin</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package that adds QML-scripting related Qt 4.8.3 libraries into your BlackBerry application targetting PlayBook v2.1 and newer versions.</description>
+    <releaseNotes>This is the first release of the package. It fully depends on PlayBook Qt4 Core library, that will enable Qt development and setup headers. One of following Visual Studio extensions is required to build and deploy the project.</releaseNotes>
+    <copyright>Copyright CodeTitans 2015</copyright>
+    <tags>qt4 native blackberry playbook qml</tags>
+
+    <dependencies>
+      <dependency id="codetitans-playbook-qt4-core" version="1.0.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="extensions\codetitans-playbook-qt4-qml.targets" target="build\native\codetitans-playbook-qt4-qml.targets" />
+    <file src="extensions\qml\bar-descriptor.xml.install.xdt" target="content\bar-descriptor.xml.install.xdt" />
+    <file src="extensions\qml\bar-descriptor.xml.uninstall.xdt" target="content\bar-descriptor.xml.uninstall.xdt" />
+
+    <file src="content\qml\**\*.*" target="content" />
+  </files>
+</package>
