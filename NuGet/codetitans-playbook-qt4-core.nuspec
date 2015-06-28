@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
-<package >
+<package>
   <metadata>
     <id>codetitans-playbook-qt4-core</id>
     <title>Qt 4.8.3 Core for PlayBook</title>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <authors>Paweł Hofman</authors>
     <owners>Paweł Hofman</owners>
     <licenseUrl>https://github.com/phofman/vs-plugin</licenseUrl>
     <projectUrl>https://github.com/phofman/vs-plugin</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Package that adds core Qt 4.8.3 libraries into your BlackBerry application targetting PlayBook v2.1 and newer versions.</description>
-    <releaseNotes>This is the first release of the package. One of following Visual Studio extensions is required to build and deploy the project.</releaseNotes>
+    <releaseNotes>This is the first release of the package. One of following Visual Studio extensions is required to build and deploy the project. You can find more info at: https://github.com/phofman/vs-plugin</releaseNotes>
     <copyright>Copyright CodeTitans 2015</copyright>
-    <tags>qt4 native blackberry playbook qml </tags>
+    <tags>qt4 native blackberry playbook qml</tags>
   </metadata>
   <files>
     <file src="extensions\codetitans-playbook-qt4-core.targets" target="build\native\codetitans-playbook-qt4-core.targets" />

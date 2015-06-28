@@ -10,7 +10,7 @@
     <asset path="QtLibs/armle-v7/libQtOpenGL.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
     <asset path="QtLibs/armle-v7/platforms/libblackberry.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
   </configuration>
- 
+
    <configuration name="Device-Release" xdt:Locator="Match(name)">
     <asset path="QtLibs/armle-v7/libQtCore.so.4.8.3" xdt:Transform="Remove" xdt:Locator="Match(path)" />
     <asset path="QtLibs/armle-v7/libQtGui.so.4.8.3" xdt:Transform="Remove" xdt:Locator="Match(path)" />
