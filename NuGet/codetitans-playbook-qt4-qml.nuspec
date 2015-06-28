@@ -10,7 +10,7 @@
     <projectUrl>https://github.com/phofman/vs-plugin</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Package that adds QML-scripting related Qt 4.8.3 libraries into your BlackBerry application targetting PlayBook v2.1 and newer versions.</description>
-    <releaseNotes>This is the first release of the package. It fully depends on PlayBook Qt4 Core library, that will enable Qt development and setup headers. One of following Visual Studio extensions is required to build and deploy the project.</releaseNotes>
+    <releaseNotes>This is the first release of the package. It fully depends on PlayBook Qt4 Core library, that will enable Qt development and setup headers. One of following Visual Studio extensions is required to build and deploy the project. You can find more info at: https://github.com/phofman/vs-plugin</releaseNotes>
     <copyright>Copyright CodeTitans 2015</copyright>
     <tags>qt4 native blackberry playbook qml</tags>
 
