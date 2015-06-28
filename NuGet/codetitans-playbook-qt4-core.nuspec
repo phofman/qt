@@ -16,8 +16,8 @@
   </metadata>
   <files>
     <file src="extensions\codetitans-playbook-qt4-core.targets" target="build\native\codetitans-playbook-qt4-core.targets" />
-    <file src="extensions\bar-descriptor.xml.install.xdt" target="content\bar-descriptor.xml.install.xdt" />
-    <file src="extensions\bar-descriptor.xml.uninstall.xdt" target="content\bar-descriptor.xml.uninstall.xdt" />
+    <file src="extensions\core\bar-descriptor.xml.install.xdt" target="content\bar-descriptor.xml.install.xdt" />
+    <file src="extensions\core\bar-descriptor.xml.uninstall.xdt" target="content\bar-descriptor.xml.uninstall.xdt" />
 
     <file src="content\core\**\*.*" target="content" />
     
