@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>codetitans-playbook-qt4-core</id>
+    <title>Qt 4.8.3 Core for PlayBook</title>
+    <version>1.0.2</version>
+    <authors>Paweł Hofman</authors>
+    <owners>Paweł Hofman</owners>
+    <licenseUrl>https://github.com/phofman/vs-plugin</licenseUrl>
+    <projectUrl>https://github.com/phofman/vs-plugin</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package that adds core Qt 4.8.3 libraries into your BlackBerry application targetting PlayBook v2.1 and newer versions.</description>
+    <releaseNotes>This is the first release of the package. One of following Visual Studio extensions is required to build and deploy the project.</releaseNotes>
+    <copyright>Copyright CodeTitans 2015</copyright>
+    <tags>qt4 native blackberry playbook qml </tags>
+  </metadata>
+  <files>
+    <file src="extensions\codetitans-playbook-qt4-core.targets" target="build\native\codetitans-playbook-qt4-core.targets" />
+    <file src="extensions\bar-descriptor.xml.install.xdt" target="content\bar-descriptor.xml.install.xdt" />
+    <file src="extensions\bar-descriptor.xml.uninstall.xdt" target="content\bar-descriptor.xml.uninstall.xdt" />
+    
+    <file src="..\Qt-4.8\playbook-arm\lib\libQtCore.so.4.8.3" target="content\QtLibs\armle-v7\libQtCore.so.4.8.3" />
+    <file src="..\Qt-4.8\playbook-arm\lib\libQtGui.so.4.8.3" target="content\QtLibs\armle-v7\libQtGui.so.4.8.3" />
+    <file src="..\Qt-4.8\playbook-arm\lib\libQtOpenGL.so.4.8.3" target="content\QtLibs\armle-v7\libQtOpenGL.so.4.8.3" />
+    <file src="..\Qt-4.8\playbook-arm\plugins\platforms\libblackberry.so" target="content\QtLibs\armle-v7\platforms\libblackberry.so" />
+
+    <file src="..\Qt-4.8\playbook-x86\lib\libQtCore.so.4.8.3" target="content\QtLibs\x86\libQtCore.so.4.8.3" />
+    <file src="..\Qt-4.8\playbook-x86\lib\libQtGui.so.4.8.3" target="content\QtLibs\x86\libQtGui.so.4.8.3" />
+    <file src="..\Qt-4.8\playbook-x86\lib\libQtOpenGL.so.4.8.3" target="content\QtLibs\x86\libQtOpenGL.so.4.8.3" />
+    <file src="..\Qt-4.8\playbook-x86\plugins\platforms\libblackberry.so" target="content\QtLibs\x86\platforms\libblackberry.so" />
+  </files>
+</package>
