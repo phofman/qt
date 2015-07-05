@@ -19,6 +19,14 @@ mkdir "%TempFolder%\core\QtLibs\x86\platforms"
 mkdir "%TempFolder%\qml\QtLibs\armle-v7"
 mkdir "%TempFolder%\qml\QtLibs\x86"
 
+echo Preparing environment...
+set nuget=nuget
+
+
+:::::::::::::::::::::::::::::
+:: Core
+:core
+pushd %WorkingDir%
 echo Copying binaries: %TempFolder%
 cp ..\Qt-4.8\playbook-arm\lib\libQtCore.so.4.8.3 "%TempFolder%\core\QtLibs\armle-v7\libQtCore.so"
 cp ..\Qt-4.8\playbook-arm\lib\libQtGui.so.4.8.3 "%TempFolder%\core\QtLibs\armle-v7\libQtGui.so"
@@ -30,6 +38,14 @@ cp ..\Qt-4.8\playbook-x86\lib\libQtGui.so.4.8.3 "%TempFolder%\core\QtLibs\x86\li
 cp ..\Qt-4.8\playbook-x86\lib\libQtOpenGL.so.4.8.3 "%TempFolder%\core\QtLibs\x86\libQtOpenGL.so"
 cp ..\Qt-4.8\playbook-x86\plugins\platforms\libblackberry.so "%TempFolder%\core\QtLibs\x86\platforms\libblackberry.so"
 
+%nuget% pack codetitans-playbook-qt4-core.nuspec
+popd
+
+:::::::::::::::::::::::::::::
+:: QML
+:qml
+pushd %WorkingDir%
+echo Copying binaries: %TempFolder%
 cp ..\Qt-4.8\playbook-arm\lib\libQtDeclarative.so.4.8.3 "%TempFolder%\qml\QtLibs\armle-v7\libQtDeclarative.so"
 cp ..\Qt-4.8\playbook-arm\lib\libQtNetwork.so.4.8.3 "%TempFolder%\qml\QtLibs\armle-v7\libQtNetwork.so"
 cp ..\Qt-4.8\playbook-arm\lib\libQtMultimedia.so.4.8.3 "%TempFolder%\qml\QtLibs\armle-v7\libQtMultimedia.so"
@@ -46,16 +62,14 @@ cp ..\Qt-4.8\playbook-x86\lib\libQtSql.so.4.8.3 "%TempFolder%\qml\QtLibs\x86\lib
 cp ..\Qt-4.8\playbook-x86\lib\libQtSvg.so.4.8.3 "%TempFolder%\qml\QtLibs\x86\libQtSvg.so"
 cp ..\Qt-4.8\playbook-x86\lib\libQtXmlPatterns.so.4.8.3 "%TempFolder%\qml\QtLibs\x86\libQtXmlPatterns.so"
 
-
-echo Preparing environment...
-set nuget=nuget
-
-pushd %WorkingDir%
-%nuget% pack codetitans-playbook-qt4-core.nuspec
+%nuget% pack codetitans-playbook-qt4-qml.nuspec
 popd
 
+:::::::::::::::::::::::::::::
+:: Image Formats
+:imageformats
 pushd %WorkingDir%
-%nuget% pack codetitans-playbook-qt4-qml.nuspec
+%nuget% pack codetitans-playbook-qt4-imageformats.nuspec
 popd
 
 echo Removing temporary files

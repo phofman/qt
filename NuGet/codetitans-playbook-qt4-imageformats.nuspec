@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>codetitans-playbook-qt4-imageformats</id>
+    <title>Qt 4.8.3 image-formats plugins for PlayBook</title>
+    <version>1.0.1</version>
+    <authors>Paweł Hofman</authors>
+    <owners>Paweł Hofman</owners>
+    <licenseUrl>https://github.com/phofman/vs-plugin</licenseUrl>
+    <projectUrl>https://github.com/phofman/vs-plugin</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package that adds JPG/PNG/GIF/SVG image formats support to Qt 4.8.3 applications targetting PlayBook v2.1 and newer versions.</description>
+    <releaseNotes>This is the first release of the package. It fully depends on PlayBook Qt4 Core library, that will enable Qt development and setup headers. One of following Visual Studio extensions is required to build and deploy the project. You can find more info at: https://github.com/phofman/vs-plugin</releaseNotes>
+    <copyright>Copyright CodeTitans 2015</copyright>
+    <tags>qt4 native blackberry playbook qml jpg png svg gif</tags>
+
+    <dependencies>
+      <dependency id="codetitans-playbook-qt4-core" version="" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="extensions\imageformats\bar-descriptor.xml.install.xdt" target="content\bar-descriptor.xml.install.xdt" />
+    <file src="extensions\imageformats\bar-descriptor.xml.uninstall.xdt" target="content\bar-descriptor.xml.uninstall.xdt" />
+
+    <file src="..\Qt-4.8\playbook-arm\plugins\imageformats\*.so" target="content\QtLibs\armle-v7\plugins\imageformats\" />
+    <file src="..\Qt-4.8\playbook-x86\plugins\imageformats\*.so" target="content\QtLibs\x86\plugins\imageformats\" />
+  </files>
+</package>

@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<qnx xmlns="http://www.qnx.com/schemas/application/1.0" xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+
+  <configuration name="Device-Debug" xdt:Locator="Match(name)">
+    <asset path="QtLibs/armle-v7/plugins/imageformats/libqgif.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/plugins/imageformats/libqico.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/plugins/imageformats/libqjpeg.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/plugins/imageformats/libqmng.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/plugins/imageformats/libqsvg.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/plugins/imageformats/libqtga.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/plugins/imageformats/libqtiff.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+
+    <asset path="QtLibs/armle-v7/plugins/imageformats/libqgif.so" type="Qnx/Elf" xdt:Transform="Insert">plugins/imageformats/libqgif.so</asset>
+    <asset path="QtLibs/armle-v7/plugins/imageformats/libqico.so" type="Qnx/Elf" xdt:Transform="Insert">plugins/imageformats/libqico.so</asset>
+    <asset path="QtLibs/armle-v7/plugins/imageformats/libqjpeg.so" type="Qnx/Elf" xdt:Transform="Insert">plugins/imageformats/libqjpeg.so</asset>
+    <asset path="QtLibs/armle-v7/plugins/imageformats/libqmng.so" type="Qnx/Elf" xdt:Transform="Insert">plugins/imageformats/libqmng.so</asset>
+    <asset path="QtLibs/armle-v7/plugins/imageformats/libqsvg.so" type="Qnx/Elf" xdt:Transform="Insert">plugins/imageformats/libqsvg.so</asset>
+    <asset path="QtLibs/armle-v7/plugins/imageformats/libqtga.so" type="Qnx/Elf" xdt:Transform="Insert">plugins/imageformats/libqtga.so</asset>
+    <asset path="QtLibs/armle-v7/plugins/imageformats/libqtiff.so" type="Qnx/Elf" xdt:Transform="Insert">plugins/imageformats/libqtiff.so</asset>
+  </configuration>
+
+  <configuration name="Device-Release" xdt:Locator="Match(name)">
+    <asset path="QtLibs/armle-v7/plugins/imageformats/libqgif.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/plugins/imageformats/libqico.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/plugins/imageformats/libqjpeg.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/plugins/imageformats/libqmng.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/plugins/imageformats/libqsvg.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/plugins/imageformats/libqtga.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/armle-v7/plugins/imageformats/libqtiff.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+
+    <asset path="QtLibs/armle-v7/plugins/imageformats/libqgif.so" type="Qnx/Elf" xdt:Transform="Insert">plugins/imageformats/libqgif.so</asset>
+    <asset path="QtLibs/armle-v7/plugins/imageformats/libqico.so" type="Qnx/Elf" xdt:Transform="Insert">plugins/imageformats/libqico.so</asset>
+    <asset path="QtLibs/armle-v7/plugins/imageformats/libqjpeg.so" type="Qnx/Elf" xdt:Transform="Insert">plugins/imageformats/libqjpeg.so</asset>
+    <asset path="QtLibs/armle-v7/plugins/imageformats/libqmng.so" type="Qnx/Elf" xdt:Transform="Insert">plugins/imageformats/libqmng.so</asset>
+    <asset path="QtLibs/armle-v7/plugins/imageformats/libqsvg.so" type="Qnx/Elf" xdt:Transform="Insert">plugins/imageformats/libqsvg.so</asset>
+    <asset path="QtLibs/armle-v7/plugins/imageformats/libqtga.so" type="Qnx/Elf" xdt:Transform="Insert">plugins/imageformats/libqtga.so</asset>
+    <asset path="QtLibs/armle-v7/plugins/imageformats/libqtiff.so" type="Qnx/Elf" xdt:Transform="Insert">plugins/imageformats/libqtiff.so</asset>
+  </configuration>
+
+  <configuration name="Simulator-Debug" xdt:Locator="Match(name)">
+    <asset path="QtLibs/x86/plugins/imageformats/libqgif.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/x86/plugins/imageformats/libqico.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/x86/plugins/imageformats/libqjpeg.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/x86/plugins/imageformats/libqmng.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/x86/plugins/imageformats/libqsvg.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/x86/plugins/imageformats/libqtga.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+    <asset path="QtLibs/x86/plugins/imageformats/libqtiff.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
+
+    <asset path="QtLibs/x86/plugins/imageformats/libqgif.so" type="Qnx/Elf" xdt:Transform="Insert">plugins/imageformats/libqgif.so</asset>
+    <asset path="QtLibs/x86/plugins/imageformats/libqico.so" type="Qnx/Elf" xdt:Transform="Insert">plugins/imageformats/libqico.so</asset>
+    <asset path="QtLibs/x86/plugins/imageformats/libqjpeg.so" type="Qnx/Elf" xdt:Transform="Insert">plugins/imageformats/libqjpeg.so</asset>
+    <asset path="QtLibs/x86/plugins/imageformats/libqmng.so" type="Qnx/Elf" xdt:Transform="Insert">plugins/imageformats/libqmng.so</asset>
+    <asset path="QtLibs/x86/plugins/imageformats/libqsvg.so" type="Qnx/Elf" xdt:Transform="Insert">plugins/imageformats/libqsvg.so</asset>
+    <asset path="QtLibs/x86/plugins/imageformats/libqtga.so" type="Qnx/Elf" xdt:Transform="Insert">plugins/imageformats/libqtga.so</asset>
+    <asset path="QtLibs/x86/plugins/imageformats/libqtiff.so" type="Qnx/Elf" xdt:Transform="Insert">plugins/imageformats/libqtiff.so</asset>
+  </configuration>
+
+</qnx>
