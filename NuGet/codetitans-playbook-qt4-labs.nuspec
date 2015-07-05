@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>codetitans-playbook-qt4-labs</id>
+    <title>Qt 4.8.3 Qt Labs libraries for PlayBook</title>
+    <version>1.0.1</version>
+    <authors>Paweł Hofman</authors>
+    <owners>Paweł Hofman</owners>
+    <licenseUrl>https://github.com/phofman/vs-plugin</licenseUrl>
+    <projectUrl>https://github.com/phofman/vs-plugin</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package that adds Qt Labs related Qt 4.8.3 libraries into your BlackBerry application targetting PlayBook v2.1 and newer versions. This will let you launch most of the Qt 'Declarative Sample' applications.</description>
+    <releaseNotes>This is the first release of the package. It fully depends on PlayBook Qt4 Core library, that will enable Qt development and setup headers. One of following Visual Studio extensions is required to build and deploy the project. You can find more info at: https://github.com/phofman/vs-plugin</releaseNotes>
+    <copyright>Copyright CodeTitans 2015</copyright>
+    <tags>qt4 native blackberry playbook qml qtlabs</tags>
+
+    <dependencies>
+      <dependency id="codetitans-playbook-qt4-core" version="" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="extensions\labs\bar-descriptor.xml.install.xdt" target="content\bar-descriptor.xml.install.xdt" />
+    <file src="extensions\labs\bar-descriptor.xml.uninstall.xdt" target="content\bar-descriptor.xml.uninstall.xdt" />
+
+    <file src="..\Qt-4.8\playbook-arm\imports\**\*.so" target="content\QtLibs\armle-v7\imports\" />
+    <file src="..\Qt-4.8\playbook-arm\imports\**\qmldir" target="content\QtLibs\armle-v7\imports\" />
+    <file src="..\Qt-4.8\playbook-x86\imports\**\*.so" target="content\QtLibs\x86\imports\" />
+    <file src="..\Qt-4.8\playbook-x86\imports\**\qmldir" target="content\QtLibs\x86\imports\" />
+  </files>
+</package>

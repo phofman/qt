@@ -72,6 +72,13 @@ pushd %WorkingDir%
 %nuget% pack codetitans-playbook-qt4-imageformats.nuspec
 popd
 
+:::::::::::::::::::::::::::::
+:: Qt Labs
+:labs
+pushd %WorkingDir%
+%nuget% pack codetitans-playbook-qt4-labs.nuspec
+popd
+
 echo Removing temporary files
 rd /S /Q %TempFolder%
 
