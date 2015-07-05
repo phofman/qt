@@ -3,7 +3,7 @@
   <metadata>
     <id>codetitans-playbook-qt4-core</id>
     <title>Qt 4.8.3 Core for PlayBook</title>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <authors>Paweł Hofman</authors>
     <owners>Paweł Hofman</owners>
     <licenseUrl>https://github.com/phofman/vs-plugin</licenseUrl>

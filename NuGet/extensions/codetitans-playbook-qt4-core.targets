@@ -5,8 +5,8 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Platform)' == 'BlackBerry'">
     <ClCompile>
-      <PreprocessorDefinitions>HAS_QT_CORE;QT_CORE_LIB;QT_SHARED;QT_BOOTSTRAPPED;Q_OS_BLACKBERRY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>HAS_QT_CORE;QT_CORE_LIB;QT_SHARED;QT_BOOTSTRAPPED;Q_WS_QPA;Q_OS_BLACKBERRY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)include;$(MSBuildThisFileDirectory)include\Qt;$(MSBuildThisFileDirectory)include\QtCore;$(MSBuildThisFileDirectory)include\QtGui;$(MSBuildThisFileDirectory)include\QtDeclarative;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>QtCore;QtGui;QtOpenGL;%(AdditionalDependencies)</AdditionalDependencies>
