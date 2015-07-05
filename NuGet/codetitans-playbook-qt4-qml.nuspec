@@ -3,7 +3,7 @@
   <metadata>
     <id>codetitans-playbook-qt4-qml</id>
     <title>Qt 4.8.3 QML support for PlayBook</title>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <authors>Paweł Hofman</authors>
     <owners>Paweł Hofman</owners>
     <licenseUrl>https://github.com/phofman/vs-plugin</licenseUrl>
@@ -15,7 +15,8 @@
     <tags>qt4 native blackberry playbook qml</tags>
 
     <dependencies>
-      <dependency id="codetitans-playbook-qt4-core" version="1.0.1" />
+      <!-- empty version == get the latest available -->
+      <dependency id="codetitans-playbook-qt4-core" version="" />
     </dependencies>
   </metadata>
   <files>

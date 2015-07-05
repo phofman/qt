@@ -11,7 +11,7 @@
     <asset path="QtLibs/armle-v7/libQtXmlPatterns.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
   </configuration>
 
-   <configuration name="Device-Release" xdt:Locator="Match(name)">
+  <configuration name="Device-Release" xdt:Locator="Match(name)">
     <asset path="QtLibs/armle-v7/libQtDeclarative.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
     <asset path="QtLibs/armle-v7/libQtNetwork.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
     <asset path="QtLibs/armle-v7/libQtMultimedia.so" xdt:Transform="Remove" xdt:Locator="Match(path)" />
